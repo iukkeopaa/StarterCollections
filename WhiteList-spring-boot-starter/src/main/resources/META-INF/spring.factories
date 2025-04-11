@@ -1,0 +1,5 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+org.wqz.whitelistspringbootstarter.config.WhiteListAutoConfigure
+
+
+
