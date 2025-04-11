@@ -32,9 +32,5 @@ public class RedisStreamAutoConfiguration {
         return (StreamOperations<String, String, String>) redisConnectionFactory.getConnection().streamCommands();
     }
 
-    @Bean
-    @ConditionalOnMissingBean
-    public StreamReceiver<String, String> streamReceiver() {
-        return StreamReceiver.create(redisConnectionFactory);
-    }
+
 }    
